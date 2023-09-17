@@ -1,0 +1,76 @@
+:root {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Amatic SC";
+    background-color: aquamarine;
+  }
+
+  /* #app {
+    height: 100vh;
+  } */
+
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-top: 2%; 
+    font-size: 20px;
+  }
+  
+  .games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .option {
+    width: 30%;
+    text-align: center; 
+    border-radius: 7px;
+  }
+  
+  .option:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(105%);
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -o-transform: scale(105%);
+  }
+
+  #score {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 2%;
+  }
+
+  #score button {
+    border: none;
+    font-size: 30px;
+    margin-top: 1%;
+  }
+
+  @media (max-width: 798px) {
+    .games {
+     flex-direction: column;
+    }
+    .option {
+      margin-top: 10px;
+    }
+  }

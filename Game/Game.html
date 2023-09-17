@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
+
+    <title>JanKenPon</title>
+</head>
+
+<body>
+    
+    <h1>Rock Paper Scissor Game</h1>
+    <div id="app">
+        <div class="summary">  
+            <h1 id="inGame"></h1>
+            <h3 id="result"></h3>
+        </div>
+        <div class="games">
+            <div div class="option" onclick="pickOption('🖐')"><img src="../Asset/kertas.png" alt="" width="90px"></div>            
+            <div class="option" onclick="pickOption('✌')"><img src="../Asset/gunting.png" alt="" width="90px"></div>
+            <div class="option" onclick="pickOption('✊')"><img src="../Asset/batu.png" alt="" width="90px"></div>
+        </div>
+    </div>
+    <div id="score">
+        <p>Player: <span id="playerScore">0</span></p>
+        <p>Bot: <span id="botScore">0</span></p>
+        <button onclick="resetScore()"><b>Reset Score</b></button>
+    </div>
+
+    <script src="../JS/Main.js"></script>
+</body>
+
+</html>
